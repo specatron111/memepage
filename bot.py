@@ -114,8 +114,10 @@ while True: #run constantly
                 text = text.replace(pathU,"")
                 bot.upload_photo(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
+                
+            time.sleep(timeperpost)
             '''try:
                 os.remove(i) #delete after uploading
             except Exception:
                 pass #ELSE DO NOTHIN'''
-            time.sleep(timeperpost)
+
