@@ -84,7 +84,7 @@ while True: #run constantly
         main()
                 
         imgs = []
-        path = "home/ec2-user/memepage/images\\"+ subreddit #PATH OF SCRAPED IMAGES
+        path = "home/ec2-user/memepage/images/"+ subreddit #PATH OF SCRAPED IMAGES
         valid_images = [".jpg",".gif",".png",".tga",".mp4"]
         for f in os.listdir(path):
             ext = os.path.splitext(f)[1]
@@ -98,19 +98,19 @@ while True: #run constantly
         for i in imgs:
             if i.endswith(".jpeg"): #to add correct file extension
                 text = i[:-5]
-                pathU = path + '\\' 
+                pathU = path + '/' 
                 text = text.replace(pathU,"")
                 bot.upload_photo(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
             elif i.endswith(".mp4"): #to add correct file extension
                 text = i[:-4]
-                pathU = path + '\\' 
+                pathU = path + '/' 
                 text = text.replace(pathU,"")
                 bot.upload_video(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
             else:
                 text = i[:-4]
-                pathU = path + '\\' #bypass EOL error lmfao
+                pathU = path + '/' #bypass EOL error lmfao
                 text = text.replace(pathU,"")
                 bot.upload_photo(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
