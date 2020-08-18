@@ -51,7 +51,7 @@ class redditImageScraper: #SCRAPE IMAGES
                     if not os.path.isfile(fname):
                         urllib.request.urlretrieve(url,fname)
                         go += 1
-                        if go >= self.limit/2:
+                        if go >= self.limit:
                             break
                 except:
                     pass
