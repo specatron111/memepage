@@ -119,5 +119,5 @@ while True: #run constantly
             '''try:
                 os.remove(i) #delete after uploading
             except Exception:
-                pass #ELSE DO NOTHINbr'''
+                pass #ELSE DO NOTHINbrBRRRRRRRRRRR'''
 
