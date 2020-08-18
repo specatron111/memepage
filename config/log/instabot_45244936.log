@@ -1,0 +1,42 @@
+2020-08-17 19:14:56,587 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-08-17 19:14:56,588 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\Python\lib\site-packages\instabot\bot\bot.py
+2020-08-17 19:14:56,589 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2020-08-17 19:14:56,886 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2020-08-17 19:14:57,085 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-08-17 19:14:57,314 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2020-08-17 19:14:57,528 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2020-08-17 19:14:59,082 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [200]>
+2020-08-17 19:14:59,082 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'memeaccounttest'!
+2020-08-17 19:14:59,083 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: True
+2020-08-17 19:14:59,331 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-08-17 19:14:59,563 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2020-08-17 19:14:59,777 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: zr/token/result/?device_id=android-e660ce40f55b3c61&token_hash=&custom_device_id=android-e660ce40f55b3c61&fetch_reason=token_expired returned response: <Response [200]>
+2020-08-17 19:15:00,010 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: multiple_accounts/get_account_family/ returned response: <Response [200]>
+2020-08-17 19:15:00,234 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-08-17 19:15:00,515 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: igtv/browse_feed/?prefetch=1 returned response: <Response [200]>
+2020-08-17 19:15:00,772 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: creatives/ar_class/ returned response: <Response [200]>
+2020-08-17 19:15:01,074 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-08-17 19:15:07,195 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-08-17 19:15:07,431 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/blocked/ returned response: <Response [200]>
+2020-08-17 19:15:08,043 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/ returned response: <Response [200]>
+2020-08-17 19:15:08,276 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: loom/fetch_config/ returned response: <Response [200]>
+2020-08-17 19:15:08,711 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: scores/bootstrap/users/?surfaces=["autocomplete_user_list","coefficient_besties_list_ranking","coefficient_rank_recipient_user_suggestion","coefficient_ios_section_test_bootstrap_ranking","coefficient_direct_recipients_ranking_variant_2"] returned response: <Response [200]>
+2020-08-17 19:15:08,974 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/eligibility/get_monetization_products_eligibility_data/?product_types=branded_content returned response: <Response [200]>
+2020-08-17 19:15:09,183 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/branded_content/should_require_professional_account/ returned response: <Response [200]>
+2020-08-17 19:15:09,409 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: linked_accounts/get_linkage_status/ returned response: <Response [200]>
+2020-08-17 19:15:09,637 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: locations/request_country/ returned response: <Response [200]>
+2020-08-17 19:15:09,875 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: qp/get_cooldowns/?signed_body=signed_body=4b9c516a5410a3bc128e09c6104a7f042146b9c2023870560c63a43a7f66781c.4&ig_sig_key_version=4&ig_sig_key_version=4 returned response: <Response [200]>
+2020-08-17 19:15:10,098 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/arlink_download_info/?version_override=2.2.1 returned response: <Response [200]>
+2020-08-17 19:15:10,552 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/40354438452/info/ returned response: <Response [200]>
+2020-08-17 19:15:10,774 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2020-08-17 19:15:11,029 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&thread_message_limit=10&persistentBadging=true&limit=20 returned response: <Response [200]>
+2020-08-17 19:15:11,304 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&persistentBadging=true&limit=0 returned response: <Response [200]>
+2020-08-17 19:15:13,541 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: discover/topical_explore/?is_prefetch=true&omit_cover_media=true&use_sectional_payload=true&timezone_offset=0&session_id=0101c4bf-1bd6-4f3c-aa3c-7232a2353f51&include_fixed_destinations=true returned response: <Response [200]>
+2020-08-17 19:15:13,782 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: notifications/badge/ returned response: <Response [200]>
+2020-08-17 19:15:14,104 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qp/batch_fetch/ returned response: <Response [200]>
+2020-08-17 19:15:14,105 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\ellio\OneDrive\Documents\GitHub\instagram-posting-bot/config/memeaccounttest.checkpoint
+2020-08-17 19:15:35,393 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-17 19:15:35,634 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-17 19:15:35,635 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'test.jpg' is uploaded.
+2020-08-17 19:15:35,636 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\ellio\OneDrive\Documents\GitHub\instagram-posting-bot/config/memeaccounttest.checkpoint
+2020-08-17 19:15:35,637 - instabot version: 0.117.0 (bot) - INFO - Total requests: 33

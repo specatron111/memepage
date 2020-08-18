@@ -1,0 +1,62 @@
+2020-08-17 19:30:48,298 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-08-17 19:30:48,299 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\Python\lib\site-packages\instabot\bot\bot.py
+2020-08-17 19:30:48,299 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-08-17 19:30:48,300 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-08-17 19:30:48,300 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\ellio\OneDrive\Documents\GitHub\instagram-posting-bot/config/memeaccounttest_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=038a97c3-3324-4a53-95b5-c1363ac9759c
+- uuid=a9e24200-16e2-448c-ba5d-f95e3b5e4543
+- client_session_id=0101c4bf-1bd6-4f3c-aa3c-7232a2353f51
+- device_id=android-e660ce40f55b3c61
+2020-08-17 19:30:48,302 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-08-17 19:30:49,284 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-08-17 19:30:49,579 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-08-17 19:30:49,580 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'memeaccounttest'!
+2020-08-17 19:30:49,580 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\ellio\OneDrive\Documents\GitHub\instagram-posting-bot/config/memeaccounttest.checkpoint
+2020-08-17 19:30:53,545 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2020-08-17 19:30:53,545 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\0onvclbg6lh51.png' is not uploaded.
+2020-08-17 19:31:14,166 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-17 19:31:14,392 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-17 19:31:14,393 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\0q01jk6ldkh51.jpg' is uploaded.
+2020-08-17 19:31:17,414 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2020-08-17 19:31:17,415 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\0ttsrio21lh51.jpg' is not uploaded.
+2020-08-17 19:31:39,437 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-17 19:31:39,724 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-17 19:31:39,725 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\1nqxhage8kh51.jpg' is uploaded.
+2020-08-17 19:32:01,881 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-17 19:32:02,107 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-17 19:32:02,108 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\25pmbptesjh51.jpg' is uploaded.
+2020-08-17 19:32:05,040 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2020-08-17 19:32:05,040 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\3c24fz4w7kh51.jpg' is not uploaded.
+2020-08-17 19:32:07,146 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2020-08-17 19:32:07,146 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\483u02y2wjh51.jpg' is not uploaded.
+2020-08-17 19:32:11,465 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2020-08-17 19:32:11,466 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\49gi0qkwtjh51.png' is not uploaded.
+2020-08-17 19:32:12,648 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2020-08-17 19:32:12,648 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\62z2jxap2kh51.jpg' is not uploaded.
+2020-08-17 19:32:14,216 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2020-08-17 19:32:14,216 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\6ipdg5w75kh51.jpg' is not uploaded.
+2020-08-17 19:32:16,942 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2020-08-17 19:32:16,942 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\6q8u6h2glkh51.png' is not uploaded.
+2020-08-17 19:32:18,275 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2020-08-17 19:32:18,276 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\7mg2ee4i6kh51.jpg' is not uploaded.
+2020-08-17 19:32:19,256 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2020-08-17 19:32:19,256 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\8a8c5rxpmjh51.jpg' is not uploaded.
+2020-08-17 19:32:40,186 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-17 19:32:40,454 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-17 19:32:40,455 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\8cmchx31dkh51.jpg' is uploaded.
+2020-08-17 19:33:01,134 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-17 19:33:01,415 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-17 19:33:01,417 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\8j927l29vkh51.jpg' is uploaded.
+2020-08-17 19:33:05,170 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2020-08-17 19:33:05,171 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\8qsm7kilqjh51.png' is not uploaded.
+2020-08-17 19:33:08,655 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2020-08-17 19:33:08,656 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\9035a4foakh51.png' is not uploaded.
+2020-08-17 19:33:31,079 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-17 19:33:31,354 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-17 19:33:31,355 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\90j2458qrkh51.jpg' is uploaded.
+2020-08-17 19:33:54,120 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-17 19:33:54,347 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-17 19:33:54,348 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\98kh78a5hkh51.jpg' is uploaded.
+2020-08-17 19:34:12,239 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\ellio\OneDrive\Documents\GitHub\instagram-posting-bot/config/memeaccounttest.checkpoint
+2020-08-17 19:34:12,240 - instabot version: 0.117.0 (bot) - INFO - Total requests: 47

@@ -1,0 +1,19 @@
+2020-08-17 19:35:58,874 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-08-17 19:35:58,874 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\Python\lib\site-packages\instabot\bot\bot.py
+2020-08-17 19:35:58,875 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-08-17 19:35:58,875 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-08-17 19:35:58,875 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\ellio\OneDrive\Documents\GitHub\instagram-posting-bot/config/memeaccounttest_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=038a97c3-3324-4a53-95b5-c1363ac9759c
+- uuid=a9e24200-16e2-448c-ba5d-f95e3b5e4543
+- client_session_id=0101c4bf-1bd6-4f3c-aa3c-7232a2353f51
+- device_id=android-e660ce40f55b3c61
+2020-08-17 19:35:58,891 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-08-17 19:35:59,768 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-08-17 19:36:00,114 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-08-17 19:36:00,115 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'memeaccounttest'!
+2020-08-17 19:36:00,115 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\ellio\OneDrive\Documents\GitHub\instagram-posting-bot/config/memeaccounttest.checkpoint
+2020-08-17 19:36:05,062 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2020-08-17 19:36:05,062 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images\memes\0onvclbg6lh51.png' is not uploaded.
+2020-08-17 19:36:05,076 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\ellio\OneDrive\Documents\GitHub\instagram-posting-bot/config/memeaccounttest.checkpoint
+2020-08-17 19:36:05,077 - instabot version: 0.117.0 (bot) - INFO - Total requests: 47
