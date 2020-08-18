@@ -20,7 +20,7 @@ class redditImageScraper: #SCRAPE IMAGES
         self.sub = sub
         self.limit = limit
         self.order = order
-        self.path = f'images/{self.sub}/'
+        self.path = f'home/ec2-user/memepage/images/{self.sub}/'
         self.reddit = praw.Reddit(client_id=config['REDDIT']['client_id'],
                                   client_secret=config['REDDIT']['client_secret'],
                                   user_agent='Multithreaded Reddit Image Downloader v2.0 (by u/impshum)')
@@ -39,7 +39,7 @@ class redditImageScraper: #SCRAPE IMAGES
             if self.order == 'hot':
                 submissions = self.reddit.subreddit(self.sub).hot(limit=None)
             elif self.order == 'top':
-                submissions = self.reddit.subreddit(self.sub).top(limit=None)
+                submissions = self.reddit.subreddit(self.sub).top(limit=None,time_filter="day")
             elif self.order == 'new':
                 submissions = self.reddit.subreddit(self.sub).new(limit=None)
 
@@ -84,7 +84,7 @@ while True: #run constantly
         main()
                 
         imgs = []
-        path = "images\\"+ subreddit #PATH OF SCRAPED IMAGES
+        path = "home/ec2-user/memepage/images/"+ subreddit #PATH OF SCRAPED IMAGES
         valid_images = [".jpg",".gif",".png",".tga",".mp4"]
         for f in os.listdir(path):
             ext = os.path.splitext(f)[1]
@@ -98,24 +98,26 @@ while True: #run constantly
         for i in imgs:
             if i.endswith(".jpeg"): #to add correct file extension
                 text = i[:-5]
-                pathU = path + '\\' 
+                pathU = path + '/' 
                 text = text.replace(pathU,"")
                 bot.upload_photo(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
             elif i.endswith(".mp4"): #to add correct file extension
                 text = i[:-4]
-                pathU = path + '\\' 
+                pathU = path + '/' 
                 text = text.replace(pathU,"")
                 bot.upload_video(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
             else:
                 text = i[:-4]
-                pathU = path + '\\' #bypass EOL error lmfao
+                pathU = path + '/' #bypass EOL error lmfao
                 text = text.replace(pathU,"")
                 bot.upload_photo(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
+                
             time.sleep(timeperpost)
             '''try:
                 os.remove(i) #delete after uploading
             except Exception:
-                pass #ELSE DO NOTHINg'''
+                pass #ELSE DO NOTHIN'''
+
