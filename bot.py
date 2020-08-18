@@ -20,7 +20,7 @@ class redditImageScraper: #SCRAPE IMAGES
         self.sub = sub
         self.limit = limit
         self.order = order
-        self.path = f'images/{self.sub}/'
+        self.path = f'home/ec2-user/memepage/images/{self.sub}/'
         self.reddit = praw.Reddit(client_id=config['REDDIT']['client_id'],
                                   client_secret=config['REDDIT']['client_secret'],
                                   user_agent='Multithreaded Reddit Image Downloader v2.0 (by u/impshum)')
@@ -84,7 +84,7 @@ while True: #run constantly
         main()
                 
         imgs = []
-        path = "images\\"+ subreddit #PATH OF SCRAPED IMAGES
+        path = "home/ec2-user/memepage/images\\"+ subreddit #PATH OF SCRAPED IMAGES
         valid_images = [".jpg",".gif",".png",".tga",".mp4"]
         for f in os.listdir(path):
             ext = os.path.splitext(f)[1]
