@@ -20,7 +20,7 @@ class redditImageScraper: #SCRAPE IMAGES
         self.sub = sub
         self.limit = limit
         self.order = order
-        self.path = f'images/{self.sub}/'
+        self.path = f'images/{self.sub}//'
         self.reddit = praw.Reddit(client_id=config['REDDIT']['client_id'],
                                   client_secret=config['REDDIT']['client_secret'],
                                   user_agent='Multithreaded Reddit Image Downloader v2.0 (by u/impshum)')

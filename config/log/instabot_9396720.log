@@ -1,0 +1,11 @@
+2020-08-18 19:25:17,900 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-08-18 19:25:17,901 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\Python\lib\site-packages\instabot\bot\bot.py
+2020-08-18 19:25:17,907 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-08-18 19:25:17,907 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-08-18 19:25:17,907 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=815992c6-d480-4fc1-bbfc-64ca4f7f5201
+- uuid=14676004-ff81-40b9-92f8-d938c2be330c
+- client_session_id=c504706f-ceeb-4913-b243-991b386d1038
+- device_id=android-d918cd0571e06043
+2020-08-18 19:25:17,914 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
