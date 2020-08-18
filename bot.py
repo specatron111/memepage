@@ -39,7 +39,7 @@ class redditImageScraper: #SCRAPE IMAGES
             if self.order == 'hot':
                 submissions = self.reddit.subreddit(self.sub).hot(limit=None)
             elif self.order == 'top':
-                submissions = self.reddit.subreddit(self.sub).top(limit=None)
+                submissions = self.reddit.subreddit(self.sub).top(limit=None,time_filter="day")
             elif self.order == 'new':
                 submissions = self.reddit.subreddit(self.sub).new(limit=None)
 
