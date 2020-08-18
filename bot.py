@@ -118,4 +118,4 @@ while True: #run constantly
             '''try:
                 os.remove(i) #delete after uploading
             except Exception:
-                pass #ELSE DO NOTHIN'''
+                pass #ELSE DO NOTHINg'''
