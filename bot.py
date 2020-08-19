@@ -12,7 +12,7 @@ import moviepy.editor as mpe
 global subreddit  
 bot = Bot() 
 bot.login(username = "freshly.squeeze",  
-          password = "") #LOGIN TO BOT
+          password = "Epicgamerman2005$!") #LOGIN TO BOT
 
 class redditImageScraper: #SCRAPE IMAGES
     def __init__(self, sub, limit, order):
@@ -43,8 +43,10 @@ class redditImageScraper: #SCRAPE IMAGES
                 submissions = self.reddit.subreddit(self.sub).top(limit=None,time_filter="day")
             elif self.order == 'new':
                 submissions = self.reddit.subreddit(self.sub).new(limit=None)
-
+            count=0
             for submission in submissions:
+                print(submission)
+                count+=1
                 try: #VIDEO STUFF
                     vidurl = submission.media['reddit_video']['fallback_url'] #obtain video part
                     audio_url = vidurl[:vidurl.rfind('/')] + '/DASH_audio.mp4' #obtain audio part (holy shit reddit documentation is shit, its dash_audio.mp4 not /audio, literal aids)
@@ -66,14 +68,14 @@ class redditImageScraper: #SCRAPE IMAGES
                             final_clip = my_clip.set_audio(audio_background)
                             final_clip.write_videofile(fname,fps=25)
                             go += 1
-                            if go >= self.limit:
+                            if go >= self.limit+50:
                                 break
                     else:
                         fname = self.path + submission.title[:30].rstrip() + ".mp4"
                         if not os.path.isfile(fname):
                             urllib.request.urlretrieve(vidurl,fname) #download without audio
                             go += 1
-                            if go >= self.limit:
+                            if go >= self.limit+50:
                                 break
                 except:
                     pass
@@ -88,6 +90,8 @@ class redditImageScraper: #SCRAPE IMAGES
                         go += 1
                         if go >= self.limit:
                             break
+
+            print(count)
             if len(images):
                 with concurrent.futures.ThreadPoolExecutor() as ptolemy:
                     ptolemy.map(self.download, images)
@@ -118,12 +122,12 @@ while True: #run constantly
         timeperpost = 43200/imgsN #equal period between posting every 12 hours
         for i in imgs:
             if i.endswith(".jpeg"): #to add correct file extension
-                text = i[:-5]
+                text = i[1:-5]
                 text = text.replace(path,"")
                 bot.upload_photo(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
             elif i.endswith(".mp4"): #to add correct file extension
-                text = i[:-4]
+                text = i[1:-4]
                 text = text.replace(path,"")
                 try:
                     bot.upload_video(i, 
@@ -133,7 +137,7 @@ while True: #run constantly
                                     caption = "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
 
             else:
-                text = i[:-4]
+                text = i[1:-4]
                 text = text.replace(path,"")
                 bot.upload_photo(i, 
                                 caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
