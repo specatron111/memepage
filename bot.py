@@ -115,8 +115,7 @@ while True: #run constantly
             imgs.append(str(os.path.join(path,f))) #ADD TO LIST
 
         imgsN = len(imgs) #get how many photos
-        timeperpost = 1 #4320/imgsN #equal period between posting every 12 hours
-        print(timeperpost)
+        timeperpost = 43200/imgsN #equal period between posting every 12 hours
         for i in imgs:
             if i.endswith(".jpeg"): #to add correct file extension
                 text = i[:-5]
@@ -144,4 +143,5 @@ while True: #run constantly
                 os.remove(i) #delete after uploading
             except Exception:
                 pass #ELSE DO NOTHINbrBRRRRRRRRRRR'''
+        os.rmdir(path)
 
