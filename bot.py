@@ -65,7 +65,9 @@ class redditImageScraper: #SCRAPE IMAGES
                             my_clip = mpe.VideoFileClip(self.path + "video.mp4") #combine audio, god hell this is a headfuck
                             audio_background = mpe.AudioFileClip(audiopath)
                             final_clip = my_clip.set_audio(audio_background)
-                            final_clip.write_videofile(fname)
+                            final_clip.write_videofile(fname,preset=slow,write_logfile=True)
+                            myclip.close()
+                            final_clip.close()
                             go += 1
                             if go >= self.limit+50:
                                 break
@@ -107,7 +109,7 @@ while True: #run constantly
     for i in choices: #cycle through them
         subreddit=i
         main()
-                
+        time.sleep(10)       
         imgs = []
         path = "images/"+ subreddit #PATH OF SCRAPED IMAGES
         valid_images = [".jpg",".gif",".png",".tga",".mp4"]
