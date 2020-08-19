@@ -12,7 +12,7 @@ import moviepy.editor as mpe
 global subreddit  
 bot = Bot() 
 bot.login(username = "freshly.squeeze",  
-          password = "Epicgamerman2005") #LOGIN TO BOT
+          password = "") #LOGIN TO BOT
 
 class redditImageScraper: #SCRAPE IMAGES
     def __init__(self, sub, limit, order):
