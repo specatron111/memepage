@@ -19,3 +19,37 @@
 2020-08-19 16:52:03,247 - instabot version: 0.117.0 (bot_video) - INFO - Video 'images/dankvideos\As an American, I can't tell i.mp4' uploaded
 2020-08-19 16:52:05,646 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\That's a good improvement in g.mp4'
 2020-08-19 16:53:12,974 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\That's a good improvement in g.mp4'
+2020-08-19 17:10:03,510 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-08-19 17:10:03,511 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\Python\lib\site-packages\instabot\bot\bot.py
+2020-08-19 17:10:03,511 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-08-19 17:10:03,511 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-08-19 17:10:03,512 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=815992c6-d480-4fc1-bbfc-64ca4f7f5201
+- uuid=14676004-ff81-40b9-92f8-d938c2be330c
+- client_session_id=c0ecc143-650f-4cfa-a3fb-05f2173cd45d
+- device_id=android-d918cd0571e06043
+2020-08-19 17:10:03,512 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-08-19 17:10:05,752 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-08-19 17:10:06,697 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-08-19 17:10:06,926 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2020-08-19 17:10:07,178 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2020-08-19 17:10:07,640 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/inbox/ returned response: <Response [200]>
+2020-08-19 17:10:07,900 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2020-08-19 17:10:08,945 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/?limited_activity=true&show_su=true returned response: <Response [200]>
+2020-08-19 17:10:09,195 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/profile_notice/ returned response: <Response [200]>
+2020-08-19 17:10:09,480 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: discover/explore/ returned response: <Response [200]>
+2020-08-19 17:10:09,482 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'freshly.squeeze'!
+2020-08-19 17:10:09,483 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze.checkpoint
+2020-08-19 17:10:13,897 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\video.mp4'
+2020-08-19 17:10:39,763 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/?video=1 returned response: <Response [200]>
+2020-08-19 17:10:39,989 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-19 17:10:39,989 - instabot version: 0.117.0 (bot_video) - INFO - Video 'images/dankvideos\video.mp4' uploaded
+2020-08-19 17:10:50,724 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\video.mp4'
+2020-08-19 17:11:57,179 - instabot version: 0.117.0 (bot_video) - INFO - Video 'images/dankvideos\video.mp4' is not uploaded .
+2020-08-19 17:11:59,210 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\video.mp4.CONVERTED.mp4'
+2020-08-19 17:13:05,467 - instabot version: 0.117.0 (bot_video) - INFO - Video 'images/dankvideos\video.mp4.CONVERTED.mp4' is not uploaded .
+2020-08-19 17:13:26,651 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-08-19 17:13:26,868 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-19 17:13:26,869 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images/dankvideos\video.mp4.jpg' is uploaded.
+2020-08-19 17:13:36,504 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\video.mp4'

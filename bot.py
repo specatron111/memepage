@@ -7,6 +7,7 @@ import configparser
 import concurrent.futures
 import argparse
 import time
+import moviepy.editor as mpe
 
 global subreddit  
 bot = Bot() 
@@ -44,43 +45,40 @@ class redditImageScraper: #SCRAPE IMAGES
                 submissions = self.reddit.subreddit(self.sub).new(limit=None)
 
             for submission in submissions:
-                #try: #VIDEO STUFF
-                vidurl = submission.media['reddit_video']['fallback_url'] #obtain video part
-                audio_url = vidurl[:vidurl.rfind('/')] + '/DASH_audio.mp4' #obtain audio part (holy shit reddit documentation is shit, its dash_audio.mp4 not /audio, literal aids)
-                vidurl = vidurl.split("?")[0] #formatting?
-                try:
-                    urllib.request.urlretrieve(audio_url,self.path + "audio.mp3") #download audio
+                try: #VIDEO STUFF
+                    vidurl = submission.media['reddit_video']['fallback_url'] #obtain video part
+                    audio_url = vidurl[:vidurl.rfind('/')] + '/DASH_audio.mp4' #obtain audio part (holy shit reddit documentation is shit, its dash_audio.mp4 not /audio, literal aids)
+                    vidurl = vidurl.split("?")[0] #formatting?
+
+                    audiopath = self.path + "audio.mp3"
+                    
+                    try:
+                        urllib.request.urlretrieve(audio_url,audiopath) #download audio (error if 403)
+                    except:
+                        pass
+                    if os.path.isfile(audiopath): #IF WE ACC GOT AUDIO
+                        urllib.request.urlretrieve(vidurl,self.path + "video.mp4") #download vid
+
+                        fname = self.path + submission.title + ".mp4"
+                        if not os.path.isfile(fname):
+                            my_clip = mpe.VideoFileClip(self.path + "video.mp4") #combine audio, god hell this is a headfuck
+                            audio_background = mpe.AudioFileClip(audiopath)
+                            final_clip = my_clip.set_audio(audio_background)
+                            final_clip.write_videofile(fname,fps=25)
+                            go += 1
+                            if go >= self.limit:
+                                break
+                    else:
+                        fname = self.path + submission.title[:30].rstrip() + ".mp4"
+                        if not os.path.isfile(fname):
+                            urllib.request.urlretrieve(vidurl,fname) #download without audio
+                            go += 1
+                            if go >= self.limit:
+                                break
                 except:
                     pass
-                if os.path.isfile(self.path + "audio.mp3"): #IF WE ACC GOT AUDIO
-                    urllib.request.urlretrieve(vidurl,self.path + "video.mp4") #download vid
-                    infile1 = ffmpeg.input(self.path + "video.mp4") #set ffmpeg stuff
-                    infile2 = ffmpeg.input(self.path + "audio.mp3")
-
-
-                    fname = self.path + submission.title[:30].rstrip() + ".mp4"
-                    if not os.path.isfile(fname):
-                        merged  = ffmpeg.concat(infile1, infile2, v=1, a=1) #merge
-                        ffmpeg.output(merged[0], merged[1], fname) #output
-
-                        os.remove(self.path + "video.mp4")
-                        os.remove(self.path + "audio.mp3")
-                        go += 1
-                        print(go)
-                        if go >= self.limit:
-                            break
-                else:
-                    fname = self.path + submission.title[:30].rstrip() + ".mp4"
-                    if not os.path.isfile(fname):
-                        urllib.request.urlretrieve(vidurl,fname) #download without audio
-                        go += 1
-                        print(go)
-                        if go >= self.limit:
-                            break
-                #except:
-                #    pass
                 
-                if not submission.stickied and submission.url.endswith(('jpg', 'jpeg', 'png')): #photo stuff
+                if not submission.stickied and submission.url.endswith(('jpg', 'jpeg', 'png')): #PHOTO stuff
                     if submission.url[-4:] == "jpeg": #to add correct file extension
                         fname = self.path + submission.title + submission.url[-5:] #include the .
                     else:
