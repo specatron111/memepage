@@ -86,7 +86,7 @@ class redditImageScraper: #SCRAPE IMAGES
                     if not os.path.isfile(fname):
                         images.append({'url': submission.url, 'fname': fname})
                         go += 1
-                        if go >= self.limit/2:
+                        if go >= self.limit:
                             break
             if len(images):
                 with concurrent.futures.ThreadPoolExecutor() as ptolemy:
@@ -96,7 +96,7 @@ class redditImageScraper: #SCRAPE IMAGES
 
 
 def main():
-    scraper = redditImageScraper(subreddit, 100, "hot")
+    scraper = redditImageScraper(subreddit, 50, "top")
     scraper.start() #START SCRAPER
 
 while True: #run constantly
