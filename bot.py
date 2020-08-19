@@ -119,7 +119,7 @@ while True: #run constantly
             imgs.append(str(os.path.join(path,f))) #ADD TO LIST
 
         imgsN = len(imgs) #get how many photos
-        timeperpost = 43200/imgsN #equal period between posting every 12 hours
+        timeperpost = 500 #equal period between posting every 12 hours
         for i in imgs:
             if i.endswith(".jpeg"): #to add correct file extension
                 text = i[1:-5]
