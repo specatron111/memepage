@@ -122,24 +122,26 @@ while True: #run constantly
         timeperpost = 500 #equal period between posting every 7 min
         for i in imgs:
             if i.endswith(".mp4"): #to add correct file extension
-                text = text.replace(path,"")
-                text = i[1:-4]
+                text = i.replace(path,"")
+                text = text[1:-4]
                 try:
                     bot.upload_video(i, 
                                     caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
                 except:
                     bot.upload_video(i, 
                                     caption = "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
-            else: 
+            elif i.endswith(".mp4.jpg"): 
+                pass
+            else:
                 if i.endswith(".jpeg"): #to add correct file extension
-                    text = text.replace(path,"")
-                    text = i[1:-5]
+                    text = i.replace(path,"")
+                    text = text[1:-5]
                     bot.upload_photo(i, 
                                     caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
 
                 else:
-                    text = text.replace(path,"")
-                    text = i[1:-4]
+                    text = i.replace(path,"")
+                    text = text[1:-4]
                     bot.upload_photo(i, 
                                     caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
                     
