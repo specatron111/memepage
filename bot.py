@@ -45,7 +45,6 @@ class redditImageScraper: #SCRAPE IMAGES
                 submissions = self.reddit.subreddit(self.sub).new(limit=None)
             count=0
             for submission in submissions:
-                print(submission)
                 count+=1
                 try: #VIDEO STUFF
                     vidurl = submission.media['reddit_video']['fallback_url'] #obtain video part
@@ -66,7 +65,7 @@ class redditImageScraper: #SCRAPE IMAGES
                             my_clip = mpe.VideoFileClip(self.path + "video.mp4") #combine audio, god hell this is a headfuck
                             audio_background = mpe.AudioFileClip(audiopath)
                             final_clip = my_clip.set_audio(audio_background)
-                            final_clip.write_videofile(fname,fps=25)
+                            final_clip.write_videofile(fname)
                             go += 1
                             if go >= self.limit+50:
                                 break
