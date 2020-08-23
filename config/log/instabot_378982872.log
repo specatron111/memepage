@@ -20,3 +20,7 @@
 2020-08-19 20:21:59,575 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: discover/explore/ returned response: <Response [200]>
 2020-08-19 20:21:59,577 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'freshly.squeeze'!
 2020-08-19 20:21:59,578 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze.checkpoint
+2020-08-19 20:22:40,107 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\Bider man.mp4'
+2020-08-19 20:23:03,637 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/?video=1 returned response: <Response [200]>
+2020-08-19 20:23:03,863 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-19 20:23:03,863 - instabot version: 0.117.0 (bot_video) - INFO - Video 'images/dankvideos\Bider man.mp4' uploaded

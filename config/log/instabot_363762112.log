@@ -1,0 +1,86 @@
+2020-08-23 19:47:40,769 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-08-23 19:47:40,777 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\Python\lib\site-packages\instabot\bot\bot.py
+2020-08-23 19:47:40,778 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-08-23 19:47:40,778 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-08-23 19:47:40,778 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=815992c6-d480-4fc1-bbfc-64ca4f7f5201
+- uuid=14676004-ff81-40b9-92f8-d938c2be330c
+- client_session_id=a0544c41-8712-4f9e-bd3f-e580cc176ec1
+- device_id=android-d918cd0571e06043
+2020-08-23 19:47:40,778 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-08-23 19:47:46,058 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [403]>
+2020-08-23 19:47:46,058 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 3, "status": "fail"}'
+2020-08-23 19:47:46,058 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:46,254 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [403]>
+2020-08-23 19:47:46,254 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-08-23 19:47:46,254 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:46,445 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [403]>
+2020-08-23 19:47:46,445 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-08-23 19:47:46,445 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:46,640 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [403]>
+2020-08-23 19:47:46,640 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-08-23 19:47:46,640 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:46,831 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/inbox/ returned response: <Response [403]>
+2020-08-23 19:47:46,831 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-08-23 19:47:46,831 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:46,987 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [403]>
+2020-08-23 19:47:46,987 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-08-23 19:47:46,987 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:47,178 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/?limited_activity=true&show_su=true returned response: <Response [403]>
+2020-08-23 19:47:47,178 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-08-23 19:47:47,178 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:47,374 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/profile_notice/ returned response: <Response [403]>
+2020-08-23 19:47:47,375 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-08-23 19:47:47,375 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:47,563 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: discover/explore/ returned response: <Response [403]>
+2020-08-23 19:47:47,563 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message": "login_required", "error_title": "You\'ve Been Logged Out", "error_body": "Please log back in.", "logout_reason": 8, "status": "fail"}'
+2020-08-23 19:47:47,563 - instabot version: 0.117.0 (api) - ERROR - Request returns 403 error!
+2020-08-23 19:47:47,564 - instabot version: 0.117.0 (api) - INFO - Login flow failed, the cookie is broken. Relogin again.
+2020-08-23 19:47:47,571 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-08-23 19:47:47,571 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-08-23 19:47:47,571 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=815992c6-d480-4fc1-bbfc-64ca4f7f5201
+- uuid=14676004-ff81-40b9-92f8-d938c2be330c
+- client_session_id=0f5f66e3-791e-4058-b428-67316c27c594
+- device_id=android-d918cd0571e06043
+2020-08-23 19:47:47,574 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2020-08-23 19:47:47,779 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2020-08-23 19:47:47,998 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-08-23 19:47:48,218 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2020-08-23 19:47:48,422 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2020-08-23 19:47:50,257 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [200]>
+2020-08-23 19:47:50,257 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'freshly.squeeze'!
+2020-08-23 19:47:50,258 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: True
+2020-08-23 19:47:50,517 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-08-23 19:47:50,723 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2020-08-23 19:47:50,922 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: zr/token/result/?device_id=android-d918cd0571e06043&token_hash=&custom_device_id=android-d918cd0571e06043&fetch_reason=token_expired returned response: <Response [200]>
+2020-08-23 19:47:51,197 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: multiple_accounts/get_account_family/ returned response: <Response [200]>
+2020-08-23 19:47:51,405 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2020-08-23 19:47:52,074 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: igtv/browse_feed/?prefetch=1 returned response: <Response [200]>
+2020-08-23 19:47:52,267 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: creatives/ar_class/ returned response: <Response [200]>
+2020-08-23 19:47:53,294 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-08-23 19:47:55,233 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-08-23 19:47:55,430 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/blocked/ returned response: <Response [200]>
+2020-08-23 19:47:56,253 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/ returned response: <Response [200]>
+2020-08-23 19:47:56,579 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: loom/fetch_config/ returned response: <Response [200]>
+2020-08-23 19:47:58,250 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: scores/bootstrap/users/?surfaces=["autocomplete_user_list","coefficient_besties_list_ranking","coefficient_rank_recipient_user_suggestion","coefficient_ios_section_test_bootstrap_ranking","coefficient_direct_recipients_ranking_variant_2"] returned response: <Response [200]>
+2020-08-23 19:47:58,470 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/eligibility/get_monetization_products_eligibility_data/?product_types=branded_content returned response: <Response [200]>
+2020-08-23 19:47:58,926 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/branded_content/should_require_professional_account/ returned response: <Response [200]>
+2020-08-23 19:47:59,311 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: linked_accounts/get_linkage_status/ returned response: <Response [200]>
+2020-08-23 19:47:59,511 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: locations/request_country/ returned response: <Response [200]>
+2020-08-23 19:47:59,730 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: qp/get_cooldowns/?signed_body=signed_body=4b9c516a5410a3bc128e09c6104a7f042146b9c2023870560c63a43a7f66781c.4&ig_sig_key_version=4&ig_sig_key_version=4 returned response: <Response [200]>
+2020-08-23 19:47:59,934 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/arlink_download_info/?version_override=2.2.1 returned response: <Response [200]>
+2020-08-23 19:48:00,574 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/40354438452/info/ returned response: <Response [200]>
+2020-08-23 19:48:00,905 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2020-08-23 19:48:01,562 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&thread_message_limit=10&persistentBadging=true&limit=20 returned response: <Response [200]>
+2020-08-23 19:48:01,767 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&persistentBadging=true&limit=0 returned response: <Response [200]>
+2020-08-23 19:48:04,570 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: discover/topical_explore/?is_prefetch=true&omit_cover_media=true&use_sectional_payload=true&timezone_offset=0&session_id=0f5f66e3-791e-4058-b428-67316c27c594&include_fixed_destinations=true returned response: <Response [200]>
+2020-08-23 19:48:04,758 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: notifications/badge/ returned response: <Response [200]>
+2020-08-23 19:48:05,145 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qp/batch_fetch/ returned response: <Response [200]>
+2020-08-23 19:48:05,146 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze.checkpoint
+2020-08-23 19:53:25,683 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\Aaaaaaah.mp4'
+2020-08-23 19:53:27,628 - instabot version: 0.117.0 (bot_video) - INFO - Video 'images/dankvideos\Aaaaaaah.mp4' is not uploaded .
+2020-08-23 19:58:08,803 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze.checkpoint
+2020-08-23 19:58:08,804 - instabot version: 0.117.0 (bot) - INFO - Total requests: 79

@@ -1,0 +1,28 @@
+2020-08-20 16:46:50,538 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-08-20 16:46:50,546 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\Python\lib\site-packages\instabot\bot\bot.py
+2020-08-20 16:46:50,551 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-08-20 16:46:50,552 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-08-20 16:46:50,552 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=815992c6-d480-4fc1-bbfc-64ca4f7f5201
+- uuid=14676004-ff81-40b9-92f8-d938c2be330c
+- client_session_id=7df7dd03-04a3-44ef-8527-305086e847c4
+- device_id=android-d918cd0571e06043
+2020-08-20 16:46:50,552 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-08-20 16:46:56,697 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-08-20 16:46:57,657 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-08-20 16:46:58,235 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2020-08-20 16:46:58,470 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2020-08-20 16:46:59,158 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/inbox/ returned response: <Response [200]>
+2020-08-20 16:46:59,390 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2020-08-20 16:47:00,516 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/?limited_activity=true&show_su=true returned response: <Response [200]>
+2020-08-20 16:47:00,750 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/profile_notice/ returned response: <Response [200]>
+2020-08-20 16:47:02,129 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: discover/explore/ returned response: <Response [200]>
+2020-08-20 16:47:02,131 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'freshly.squeeze'!
+2020-08-20 16:47:02,131 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze.checkpoint
+2020-08-20 16:47:57,602 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'images/dankvideos\video.mp4'
+2020-08-20 16:48:22,711 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/?video=1 returned response: <Response [200]>
+2020-08-20 16:48:22,926 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-08-20 16:48:22,926 - instabot version: 0.117.0 (bot_video) - INFO - Video 'images/dankvideos\video.mp4' uploaded
+2020-08-20 16:56:42,940 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\ellio\OneDrive\Documents\GitHub\memepage/config/freshly.squeeze.checkpoint
+2020-08-20 16:56:42,941 - instabot version: 0.117.0 (bot) - INFO - Total requests: 75

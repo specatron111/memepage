@@ -65,7 +65,8 @@ class redditImageScraper: #SCRAPE IMAGES
                             my_clip = mpe.VideoFileClip(self.path + "video.mp4") #combine audio, god hell this is a headfuck
                             audio_background = mpe.AudioFileClip(audiopath)
                             final_clip = my_clip.set_audio(audio_background)
-                            final_clip.write_videofile(fname,preset=slow,write_logfile=True)
+                            final_clip.write_videofile(fname)
+                            print(fname)
                             myclip.close()
                             final_clip.close()
                             go += 1
@@ -106,10 +107,9 @@ def main():
 
 while True: #run constantly
     choices=["dankvideos","memes","dankmemes"] #subreddits
-    for i in choices: #cycle through them
-        subreddit=i
-        main()
-        time.sleep(10)       
+    for b in choices: #cycle through them
+        subreddit=b
+        main()       
         imgs = []
         path = "images/"+ subreddit #PATH OF SCRAPED IMAGES
         valid_images = [".jpg",".gif",".png",".tga",".mp4"]
@@ -124,13 +124,17 @@ while True: #run constantly
         for i in imgs:
             if i.endswith(".mp4"): #to add correct file extension
                 text = i.replace(path,"")
+                brr = False
                 text = text[1:-4]
                 try:
-                    bot.upload_video(i, 
-                                    caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
+                    bot.upload_video(i, caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
+                    brr = True
+                    print("uploaded")
                 except:
-                    bot.upload_video(i, 
-                                    caption = "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
+                    print("not uploaded")
+                if brr:
+                    print("wait")
+                    time.sleep(timeperpost)
             elif i.endswith(".mp4.jpg"): 
                 pass
             else:
@@ -146,10 +150,9 @@ while True: #run constantly
                     bot.upload_photo(i, 
                                     caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
                     
-            time.sleep(timeperpost)
             '''try:
                 os.remove(i) #delete after uploading
             except Exception:
                 pass #ELSE DO NOTHINbrBRRRRRRRRRRR'''
-        os.rmdir(path)
+        #os.rmdir(path)
 
