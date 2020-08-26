@@ -106,7 +106,7 @@ def main():
     scraper.start() #START SCRAPER
 
 while True: #run constantly
-    choices=["dankvideos","memes","dankmemes"] #subreddits
+    choices=["dankvideos","memes","meirl","dankmemes","blackpeopletwitter","wholesomememes"] #subreddits
     for b in choices: #cycle through them
         subreddit=b
         main()       
