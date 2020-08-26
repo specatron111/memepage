@@ -120,36 +120,35 @@ while True: #run constantly
             imgs.append(str(os.path.join(path,f))) #ADD TO LIST
 
         imgsN = len(imgs) #get how many photos
-        timeperpost = 500 #equal period between posting every 7 min
+        timeperpost = 0 #equal period between posting every 7 min
         for i in imgs:
             if i.endswith(".mp4"): #to add correct file extension
                 text = i.replace(path,"")
-                brr = False
                 text = text[1:-4]
                 try:
                     bot.upload_video(i, caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
-                    brr = True
-                    print("uploaded")
                 except:
-                    print("not uploaded")
-                if brr:
-                    print("wait")
-                    time.sleep(timeperpost)
+                    pass
             elif i.endswith(".mp4.jpg"): 
                 pass
             else:
                 if i.endswith(".jpeg"): #to add correct file extension
                     text = i.replace(path,"")
                     text = text[1:-5]
-                    bot.upload_photo(i, 
-                                    caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
-
-                else:
+                    try:
+                        bot.upload_photo(i, 
+                                        caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
+                    except:
+                        pass
+                elif i.endswith(".jpg") or i.endswith(".png"):
                     text = i.replace(path,"")
                     text = text[1:-4]
-                    bot.upload_photo(i, 
-                                    caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
-                    
+                    try:
+                        bot.upload_photo(i, 
+                                        caption = text + "\n \n #meme #memes #funny #dankmemes #memesdaily #funnymemes #lol #follow #dank #humor #like #love #dankmeme #tiktok #lmao #instagram #comedy #ol #anime #fun #dailymemes #memepage #edgymemes #offensivememes #memestagram #funnymeme #memer #fortnite #instagood #bhfyp") #UPLOAD LIST OF PHOTOS
+                    except:
+                        pass
+                #time.sleep(timeperpost)    
             '''try:
                 os.remove(i) #delete after uploading
             except Exception:
